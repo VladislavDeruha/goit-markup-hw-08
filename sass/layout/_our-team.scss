@@ -1,0 +1,71 @@
+/* ==========Наша команда index.html========== */
+// 220 - max
+@media screen and (min-width: 200px) {
+	.main-team-basis {
+		flex-basis: calc((100% - 0px) / 1);
+
+		background: var(--my-white);
+		box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+		border-radius: 0px 0px 4px 4px;
+	}
+
+	.main-team-item {
+		padding-top: 30px;
+		padding-bottom: 24px;
+		border-top: none;
+	}
+}
+
+// 768 - max
+@media screen and (min-width: 768px) {
+	.main-team-basis {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+}
+
+// 1200 - max
+@media screen and (min-width: 1200px) {
+	.main-team-basis {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+
+	.main-team-item {
+		padding-bottom: 30px;
+	}
+}
+
+.main-team {
+	background: var(--main-bg);
+}
+
+.main-team-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: var(--first-text-color);
+
+	&.marging-bottom {
+		margin-bottom: 10px;
+	}
+}
+
+.main-team-text {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: var(--second-text-color);
+	margin-bottom: 16px;
+}
+
+.main-team-social-item {
+	color: var(--social-logo);
+	background-color: var(--my-white);
+	overflow: hidden;
+
+	&:hover,
+	&:focus {
+		color: var(--my-white);
+		background-color: var(--accent-color);
+	}
+}
